@@ -9,7 +9,7 @@ function _timer () {
     date.setSeconds(seconds);
     var result = date.toISOString().substr(11, 8);
 
-    timer.innerHTML = "~ " + result + " elapesed";
+    timer.innerHTML = "~ " + result + " elapsed";
     seconds += 1;
 
     if (seconds == 1) {
