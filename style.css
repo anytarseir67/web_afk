@@ -1,0 +1,87 @@
+body {
+    background-image: url("./chom.png");
+    background-repeat: no-repeat;
+    background-size: 2560px 1440px;
+}
+
+#timer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    font-size: 700%;
+    position: fixed; 
+    bottom:0%;
+    padding: 10px;
+    opacity: 0%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    animation: rainbow 5s infinite alternate;
+}
+
+#afk {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    height: fit-content;
+    font-size: 900%;
+    padding: 10px;
+    position: fixed; 
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    animation: rainbow 10s infinite alternate, slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0%;
+    }
+
+    50% {
+        top: 60%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes rainbow{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}
